@@ -1,0 +1,12 @@
+/**
+criar usuario
+**/
+
+CREATE TABLE `sis_usuario` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`ds_nome` VARCHAR(45),
+	`ds_email` VARCHAR(50),
+	`ds_telefone` VARCHAR(45),
+	`ds_status` INT,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
