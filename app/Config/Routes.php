@@ -29,7 +29,8 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/usuariosall','UsersAllController::index');
 $routes->get('/noticias/buscarNoticias','NoticiasAll::buscarNoticias');
-
+$routes->get('/noticias/bigNews','NoticiasAllBigNews::index');
+$routes->get('/teste','ReceberUser::createUser');
 /*
 /*
  * --------------------------------------------------------------------
