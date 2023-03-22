@@ -5,7 +5,9 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 use Firebase\JWT\JWT;
 use App\Models\UserModel;
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Methods: *");
 class AuthController extends ResourceController
 {
     // Chave secreta para gerar tokens JWT
