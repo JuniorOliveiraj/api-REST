@@ -11,7 +11,7 @@ header("Access-Control-Allow-Methods: *");
 class AuthController extends ResourceController
 {
     // Chave secreta para gerar tokens JWT
-    private $key = "sua_chave_secreta_aqui";
+    private $key = "$2y$10MFKDgDBujKwY.VZi/DH6JuR58ISGjlS6mlEobHlmhX9zQ.Ha4c3qC";
 
     // Endpoint de login
     public function login()

@@ -11,7 +11,7 @@ header("Access-Control-Allow-Headers: *");
 class AuthFilter implements FilterInterface
 {
     // Chave secreta para verificar tokens JWT
-    private $key = "sua_chave_secreta_aqui";
+    private $key = "$2y$10MFKDgDBujKwY.VZi/DH6JuR58ISGjlS6mlEobHlmhX9zQ.Ha4c3qC";
 
     public function before(RequestInterface $request, $arguments = null)
     {
