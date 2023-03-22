@@ -31,6 +31,10 @@ $routes->get('/usuariosall','UsersAllController::index');
 $routes->get('/noticias/buscarNoticias','NoticiasAll::buscarNoticias');
 $routes->get('/noticias/bigNews','NoticiasAllBigNews::index');
 $routes->get('/teste','ReceberUser::createUser');
+// Rota para endpoint de login
+//$routes->get('/login', 'AuthController::login');
+$routes->post('/login', 'AuthController::login');
+
 /*
 /*
  * --------------------------------------------------------------------

@@ -10,3 +10,28 @@ CREATE TABLE `sis_usuario` (
 	`ds_status` INT,
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+
+/*
+criando tabela de usuario 
+
+*/
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+/*
+inserindo usuario 
+
+*/
+
+INSERT INTO `users` (`name`, `email`, `password`)
+VALUES ('João da Silva', 'joao@example.com', '$2y$10$MFKDgDBujKwY.VZi/DH6JuR58ISGjlS6mlEobHlmhX9zQ.Ha4c3qC');
