@@ -21,6 +21,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'jwt'      => \App\Filters\JWTFilter::class, 
     ];
 
     /**
@@ -30,12 +31,12 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             // 'honeypot',
-            // 'csrf',
+          // 'csrf',
             // 'invalidchars',
         ],
         'after' => [
             'toolbar',
-            // 'honeypot',
+             'honeypot',
             // 'secureheaders',
         ],
     ];
@@ -60,5 +61,14 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'csrf' => [
+            'before' => ['api/*', 'users/*'],
+        ],
+        'jwt' => [ 
+            'before' => ['users/*'], // protege todas as rotas que iniciam com "users/"
+        ],
+
+
+    ];
 }

@@ -34,8 +34,50 @@ class UserModel extends Model
         ]
     ];
 
-    public function getUserByEmail($email)
+    /**
+     * Cria um novo usuário.
+     *
+     * @param string $name     O nome do usuário.
+     * @param string $email    O endereço de email do usuário.
+     * @param string $password A senha do usuário.
+     *
+     * @return int|false O ID do novo usuário, ou false se houver um erro.
+     */
+    public function createNewUser($name, $email, $password)
     {
-        return $this->where('email', $email)->first();
+        // Validar os campos obrigatórios
+        if (empty($name) || empty($email) || empty($password)) {
+            return false;
+        }
+        // Criptografar a senha
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        // Salvar o novo usuário no banco de dados
+        $data = [
+            'name' => $name,
+            'email' => $email,
+            'password' => $password
+        ];
+        $this->insert($data);
+        // Retornar o ID do novo usuário
+        return $this->insertID();
+    }
+    /**
+     * Retorna um usuário com base no endereço de email e senha.
+     *
+     * @param string $email    O endereço de email do usuário.
+     * @param string $password A senha do usuário.
+     *
+     * @return array|false O usuário encontrado, ou false se não houver correspondência.
+     */
+    public function getUserByEmail($email, $password)
+    {
+        $user = $this->where('email', $email)->first();
+        if (!$user) {
+            return false;
+        }
+        if (!password_verify($password, $user['password'])) {
+            return false;
+        }
+        return $user;
     }
 }

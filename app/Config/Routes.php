@@ -30,10 +30,16 @@ $routes->get('/', 'Home::index');
 $routes->get('/usuariosall','UsersAllController::index');
 $routes->get('/noticias/buscarNoticias','NoticiasAll::buscarNoticias');
 $routes->get('/noticias/bigNews','NoticiasAllBigNews::index');
-$routes->get('/teste','ReceberUser::createUser');
+$routes->get('/register','ReceberUser::createUser');
+$routes->get('/login','ReceberUser::login');
 // Rota para endpoint de login
 //$routes->get('/login', 'AuthController::login');
-$routes->post('/login', 'AuthController::login');
+// $routes->post('/login', 'AuthController::login');
+// $routes->post('/register', 'AuthController::register');
+$routes->options('/register', 'AuthController::register');
+// $routes->group('api', ['namespace' => 'App\Controllers', 'filter' => 'jwt'], function ($routes) {
+//     $routes->get('users', 'UsersAllController::index');
+// });
 
 /*
 /*

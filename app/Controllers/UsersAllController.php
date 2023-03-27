@@ -1,19 +1,17 @@
-<?php 
+<?php
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\UsersAll;
-class UsersAllController extends Controller{
-    public function index ()
+use App\Models\UserModel;
+
+class UsersAllController extends Controller
+{
+    protected $middleware = ['jwt'];
+
+    public function index()
     {
-        // criar uma instância do modelo UsuariosAll
-        $model = new UsersAll();
-
-        // buscar todos os usuários do banco de dados
-        $usuarios = $model->findAll();
-
-        // retornar a lista de usuários em formato JSON
-        return $this->response->setJSON($usuarios);
+        $model = new UserModel();
+        $users = $model->findAll();
+        return $this->response->setJSON($users);
     }
 }
-
