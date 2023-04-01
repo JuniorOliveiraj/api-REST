@@ -32,6 +32,8 @@ $routes->get('/noticias/buscarNoticias','NoticiasAll::buscarNoticias');
 $routes->get('/noticias/bigNews','NoticiasAllBigNews::index');
 $routes->get('/register','ReceberUser::createUser');
 $routes->get('/login','ReceberUser::login');
+$routes->get('/favoritos/adicionar','NoticiaFavorita::adicionar');
+$routes->get('/favoritos/listar','NoticiaFavorita::listarFavoritas');
 // Rota para endpoint de login
 //$routes->get('/login', 'AuthController::login');
 // $routes->post('/login', 'AuthController::login');

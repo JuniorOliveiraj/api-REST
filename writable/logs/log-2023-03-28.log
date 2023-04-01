@@ -1,0 +1,436 @@
+CRITICAL - 2023-03-28 01:20:06 --> Undefined array key "source_name"
+in APPPATH\Controllers\NoticiaFavorita.php on line 28.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 01:20:18 --> Undefined array key "source_name"
+in APPPATH\Controllers\NoticiaFavorita.php on line 28.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 01:20:24 --> Undefined array key "source_name"
+in APPPATH\Controllers\NoticiaFavorita.php on line 28.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 01:24:16 --> Undefined array key "source_name"
+in APPPATH\Controllers\NoticiaFavorita.php on line 29.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 01:26:23 --> Undefined array key "source_name"
+in APPPATH\Controllers\NoticiaFavorita.php on line 29.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 01:26:39 --> Undefined array key "source_url"
+in APPPATH\Controllers\NoticiaFavorita.php on line 30.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_url"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 22:55:59 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 22:55:59 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\NoticiaFavorita.php(41): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:01:21 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Alexandre valid...', 'Consultor Jur\xC3\xAD...', 'Por Jos\xC3\xA9 Hig\xC3\xAD...', 'https://www.con...', '2023-03-27T23:1...', 'https://s.conju...', 'Consultor Jur\xC3\xAD...', 'https://www.con...', '1', '16')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:01:21 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Alexandre valida contrato de franquia em relação de trabalho', 'Consultor Jurídico - Notícias, 27/3/2023 - Alexandre valida contrato de franquia em relação de trabalho [Trabalhista]', 'Por José Higídio
+Devido à posição reiterada do Supremo Tribunal Federal no sentido de permitir formas alternativas de relação de emprego, o ministro Alexandre de Moraes anulou um acórdão do Tribunal Regional do Trabalho da 1ª Região (RJ) que havia de... [1410 chars]', 'https://www.conjur.com.br/2023-mar-27/alexandre-valida-contrato-franquia-relacao-trabalho', '2023-03-27T23:18:00Z', 'https://s.conjur.com.br/img/b/alexandre-moraes25.png', 'Consultor Jurídico', 'https://www.conjur.com.br', '1', '16')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:06:41 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(71): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Landim abre o j...', 'Rodolfo Landim,...', 'Rodolfo Landim,...', 'https://colunad...', '2023-03-27T22:2...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '16')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:06:41 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(71): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Landim abre o jogo sobre ampliação do mandato no Fla e revela: “Minha vontade era não ter sido reeleito”', 'Rodolfo Landim, presidente do Flamengo, falou sobre o momento político do clube Nos dias em que o futebol carioca parou na Data FIFA, os bastidores Maior site de notícias do Flamengo Landim abre o jogo sobre ampliação do mandato no Fla e revela: “Minha vontade era não ter sido reeleito” Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Rodolfo Landim, presidente do Flamengo, falou sobre o momento político do clube
+Nos dias em que o futebol carioca parou na Data FIFA, os bastidores políticos do Flamengo ‘ferveram’. A possibilidade de ampliação de mandato do atual presidente, Rodolfo... [2417 chars]', 'https://colunadofla.com/2023/03/landim-abre-o-jogo-sobre-3o-mandato-no-fla-e-revela-minha-vontade-era-nao-ter-sido-reeleito/', '2023-03-27T22:20:37Z', 'https://colunadofla.com/wp-content/uploads/2023/03/rodolfo-landim.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '16')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:35:10 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('AO VIVO | Assis...', 'Caminho do Flam...', 'Caminho do Flam...', 'https://colunad...', '2023-03-27T23:5...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:35:10 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(68): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('AO VIVO | Assista ao sorteio da Libertadores com o Coluna do Fla', 'Caminho do Flamengo rumo ao tetracampeonato da Libertadores será conhecido a partir das 21h (horário de Brasília) A Conmebol sorteia nesta segunda-feira Maior site de notícias do Flamengo AO VIVO | Assista ao sorteio da Libertadores com o Coluna do Fla Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Caminho do Flamengo rumo ao tetracampeonato da Libertadores será conhecido a partir das 21h (horário de Brasília)
+A Conmebol sorteia nesta segunda-feira (27), às 21h (horário de Brasília), as chaves da Copa Libertadores da América 2023. O evento, que... [1726 chars]', 'https://colunadofla.com/2023/03/ao-vivo-assista-ao-sorteio-da-libertadores-com-o-coluna-do-fla/', '2023-03-27T23:51:02Z', 'https://colunadofla.com/wp-content/uploads/2023/03/marinho-arrascaeta-fabricio-bruno-libertadores.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:37:37 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(68): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Concession\xC3\xA1ria...', 'Consultor Jur\xC3\xAD...', 'Por maioria de ...', 'https://www.con...', '2023-03-27T23:3...', 'https://s.conju...', 'Consultor Jur\xC3\xAD...', 'https://www.con...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:37:37 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(68): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Concessionárias não precisam avisar sobre vistoria em medidores', 'Consultor Jurídico - Notícias, 27/3/2023 - Concessionárias não precisam avisar sobre vistoria em medidores [Constitucional]', 'Por maioria de votos, o Plenário do Supremo Tribunal Federal declarou a inconstitucionalidade de uma lei do estado do Rio de Janeiro que obrigava concessionárias de energia elétrica a expedir notificação pessoal, com aviso de recebimento, antes de fa... [1610 chars]', 'https://www.conjur.com.br/2023-mar-27/concessionarias-nao-avisar-vistoria-medidores', '2023-03-27T23:36:00Z', 'https://s.conjur.com.br/img/b/medidor-energia.png', 'Consultor Jurídico', 'https://www.conjur.com.br', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:41:00 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Jorge Jesus rev...', 'Jorge Jesus con...', 'Jorge Jesus con...', 'https://colunad...', '2023-03-27T23:0...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:41:00 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Jorge Jesus revela ‘exigência’ para próximo trabalho na carreira', 'Jorge Jesus concedeu entrevista nesta segunda-feira (27), em Portugal, e abriu o jogo sobre o futuro Mesmo no Fenerbahçe, da Turquia, o nome de Jorge Maior site de notícias do Flamengo Jorge Jesus revela ‘exigência’ para próximo trabalho na carreira Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Jorge Jesus concedeu entrevista nesta segunda-feira (27), em Portugal, e abriu o jogo sobre o futuro
+Mesmo no Fenerbahçe, da Turquia, o nome de Jorge Jesus foi o tema dos debates de programas esportivos do Brasil nesta segunda-feira (27). Isso porque... [1749 chars]', 'https://colunadofla.com/2023/03/jorge-jesus-revela-exigencia-para-proximo-trabalho-na-carreira/', '2023-03-27T23:08:17Z', 'https://colunadofla.com/wp-content/uploads/2023/03/jorge-jesus-correndo-jogadores-flamengo.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:42:53 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, An...', 'Meia do Fulham,...', 'Meia do Fulham,...', 'https://colunad...', '2023-03-27T23:0...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:42:53 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas Maior site de notícias do Flamengo Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo
+A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas atuações na chegada à Gávea, o meio campista foi um dos principais atletas do time, entretanto, após ... [1972 chars]', 'https://colunadofla.com/2023/03/ex-flamengo-andreas-pereira-relembra-atitude-de-gabigol-apos-chegada-de-dorival/', '2023-03-27T23:09:55Z', 'https://colunadofla.com/wp-content/uploads/2023/03/gabigol-andreas-flamengo.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:44:34 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Landim abre o j...', 'Rodolfo Landim,...', 'Rodolfo Landim,...', 'https://colunad...', '2023-03-27T22:2...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:44:34 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Landim abre o jogo sobre ampliação do mandato no Fla e revela: “Minha vontade era não ter sido reeleito”', 'Rodolfo Landim, presidente do Flamengo, falou sobre o momento político do clube Nos dias em que o futebol carioca parou na Data FIFA, os bastidores Maior site de notícias do Flamengo Landim abre o jogo sobre ampliação do mandato no Fla e revela: “Minha vontade era não ter sido reeleito” Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Rodolfo Landim, presidente do Flamengo, falou sobre o momento político do clube
+Nos dias em que o futebol carioca parou na Data FIFA, os bastidores políticos do Flamengo ‘ferveram’. A possibilidade de ampliação de mandato do atual presidente, Rodolfo... [2417 chars]', 'https://colunadofla.com/2023/03/landim-abre-o-jogo-sobre-3o-mandato-no-fla-e-revela-minha-vontade-era-nao-ter-sido-reeleito/', '2023-03-27T22:20:37Z', 'https://colunadofla.com/wp-content/uploads/2023/03/rodolfo-landim.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:46:03 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser(Array)
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:46:03 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:46:09 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser(Array)
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:46:09 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:46:34 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, An...', 'Meia do Fulham,...', 'Meia do Fulham,...', 'https://colunad...', '2023-03-27T23:0...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '0', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:46:34 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas Maior site de notícias do Flamengo Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo
+A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas atuações na chegada à Gávea, o meio campista foi um dos principais atletas do time, entretanto, após ... [1972 chars]', 'https://colunadofla.com/2023/03/ex-flamengo-andreas-pereira-relembra-atitude-de-gabigol-apos-chegada-de-dorival/', '2023-03-27T23:09:55Z', 'https://colunadofla.com/wp-content/uploads/2023/03/gabigol-andreas-flamengo.jpg', 'Coluna do Fla', 'https://colunadofla.com', '0', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:46:51 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, An...', 'Meia do Fulham,...', 'Meia do Fulham,...', 'https://colunad...', '2023-03-27T23:0...', 'https://colunad...', 'Coluna do Fla', 'https://colunad...', '1', '21')
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#11 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-28 23:46:51 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\FavoriteNewsAdd.php(69): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\NoticiaFavorita.php(42): App\Models\FavoriteNewsAdd->adicionarFavoritouser('Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas Maior site de notícias do Flamengo Ex-Flamengo, Andreas Pereira relembra atitude de Gabigol após chegada de Dorival Flamengo - Notícias e jogo do Flamengo - Coluna do Fla', 'Meia do Fulham, da Inglaterra, recordou momentos da passagem pelo Flamengo
+A passagem de Andreas Pereira pelo Flamengo teve altos e baixos. Com boas atuações na chegada à Gávea, o meio campista foi um dos principais atletas do time, entretanto, após ... [1972 chars]', 'https://colunadofla.com/2023/03/ex-flamengo-andreas-pereira-relembra-atitude-de-gabigol-apos-chegada-de-dorival/', '2023-03-27T23:09:55Z', 'https://colunadofla.com/wp-content/uploads/2023/03/gabigol-andreas-flamengo.jpg', 'Coluna do Fla', 'https://colunadofla.com', '1', '21')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:49:28 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 23:49:28 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\NoticiaFavorita.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 23:57:35 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\workDashboard\newsletter\api\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\workDashboard\newsletter\api\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\workDashboard\newsletter\api\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\workDashboard\newsletter\api\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\workDashboard\newsletter\api\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\workDashboard\newsletter\api\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\workDashboard\newsletter\api\app\Controllers\NoticiaFavorita.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\workDashboard\newsletter\api\system\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+#9 C:\workDashboard\newsletter\api\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+#10 C:\workDashboard\newsletter\api\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\workDashboard\newsletter\api\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-28 23:57:35 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `favorite_news` (`user_id`, `title`, `description`, `content`, `url`, `image`, `publishedAt`, `source_name`, `source_url`, `status`, `created_at`, `updated_at`) VALUES (:user_id:, :title:, :description:, :content:, :url:, :image:, :publishedAt:, :source_name:, :source_url:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\NoticiaFavorita.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

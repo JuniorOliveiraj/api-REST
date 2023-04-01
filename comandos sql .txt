@@ -45,3 +45,30 @@ ALTER TABLE `users`
 ADD `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 ADD `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
+/*
+*
+* tabela de noticias favoritas de usuario 
+*
+*/
+
+
+CREATE TABLE favorite_news (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  content TEXT NOT NULL,
+  url VARCHAR(255) NOT NULL,
+  image VARCHAR(255) NOT NULL,
+  publishedAt VARCHAR(255) NOT NULL,
+  source_name VARCHAR(255) NOT NULL,
+  source_url VARCHAR(255) NOT NULL,
+  status INT NOT NULL
+);
+
+ALTER TABLE `favorite_news`
+ADD `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ADD `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+
+

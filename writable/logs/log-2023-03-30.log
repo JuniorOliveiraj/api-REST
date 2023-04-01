@@ -1,0 +1,7 @@
+CRITICAL - 2023-03-30 00:00:33 --> Undefined array key "publishedAt"
+in APPPATH\Controllers\NoticiaFavorita.php on line 28.
+ 1 APPPATH\Controllers\NoticiaFavorita.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "publishedAt"', 'APPPATH\\Controllers\\NoticiaFavorita.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NoticiaFavorita->adicionar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NoticiaFavorita))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
